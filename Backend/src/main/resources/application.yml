@@ -4,9 +4,8 @@ spring:
       username: root
       password: 12150
       host: localhost
-      port: 270117
+      port: 27017
       database: chat_app
       authentication-database: admin
-
 server:
-  port: 8080
+  port: 8088

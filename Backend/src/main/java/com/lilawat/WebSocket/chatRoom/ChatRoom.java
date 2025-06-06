@@ -1,22 +1,21 @@
-package com.lilawat.WebSocket.chatRoom;
+package com.lilawat.WebSocket.chatroom;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Getter
-@Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Document
 public class ChatRoom {
-
     @Id
     private String id;
     private String chatId;
     private String senderId;
     private String recipientId;
-
 }
